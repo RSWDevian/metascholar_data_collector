@@ -53,10 +53,21 @@ sources:
 
   pubmed:
     name: "PubMed"
-    base_url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
-    enabled: false
+    base_url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
+    enabled: true
     rate_limit: 3
-    max_results_per_query: 1000
+    request_delay_seconds: 0.3
+    request_delay_jitter_seconds: 0.2
+
+    # Runtime limiter (needs pagination-aware collector)
+    pagination:
+      enabled: true
+      start: 0
+      page_size: 200
+      max_requests: 1000
+      resume_from_checkpoint: true
+      checkpoint_every_requests: 10
+      checkpoint_file: "data/raw/pubmed/pubmed_checkpoint.json"
 
   semanticscholar:
     name: "Semantic Scholar"
