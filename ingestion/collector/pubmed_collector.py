@@ -13,8 +13,8 @@ class PubMedCollector(BaseCollector):
 
     def __init__(self, rate_limit: float = 3, config: Optional[Dict] = None):
         super().__init__("PubMed", rate_limit)
-        self.esearch_url = self.config.get("esearch_url","https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi")
-        self.efetch_url = self.config.get("efetch_url", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi")
+        self.esearch_url ="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
+        self.efetch_url ="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
         self.config = config or {}
         pagination_cfg = self.config.get("pagination", {})
 
