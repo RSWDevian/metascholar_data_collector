@@ -85,13 +85,14 @@ sources:
 
   pubmed:
     name: "PubMed"
-    base_url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
     enabled: true
+    esearch_url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
+    efetch_url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"  
     rate_limit: 3
     request_delay_seconds: 0.3
     request_delay_jitter_seconds: 0.2
+    max_results_per_query: 1000
 
-    # Runtime limiter (needs pagination-aware collector)
     pagination:
       enabled: true
       start: 0
@@ -100,6 +101,33 @@ sources:
       resume_from_checkpoint: true
       checkpoint_every_requests: 10
       checkpoint_file: "data/raw/pubmed/pubmed_checkpoint.json"
+
+    categories:
+    - "cancer"
+    - "genomics"
+    - "bioinformatics"
+    - "neuroscience"
+    - "immunology"
+    - "epidemiology"
+    - "pharmacology"
+    - "drug therapy"
+    - "clinical trials"
+    - "medical imaging"
+    - "public health"
+    - "infectious diseases"
+    - "virology"
+    - "microbiology"
+    - "cardiology"
+    - "endocrinology"
+    - "oncology"
+    - "pathology"
+    - "radiology"
+    - "molecular biology"
+    - "cell biology"
+    - "genetics"
+    - "biostatistics"
+    - "health informatics"
+    - "biomedical engineering"
 
   semanticscholar:
     name: "Semantic Scholar"
