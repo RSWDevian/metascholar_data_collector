@@ -49,6 +49,17 @@ class OpenAlexCollector(BaseCollector):
 
         self.output_dir = os.path.dirname(self.checkpoint_file)
 
+
+    @staticmethod
+    def reconstruct_abstract(inverted_index: Optional[dict]) -> Optional[str]:
+        if not inverted_index:
+            return None
+        position_word = {}
+        for word, positions in inverted_index.items():
+            for pos in positions:
+                position_word[pos] = word
+        return " ".join(position_word[i] for i in sorted(position_word)) if position_word else None
+
     def search(self, query: str, max_results: int = 200) -> List[Paper]:
         all_papers: List[Paper] = []
         cursor = "*"
@@ -278,7 +289,7 @@ class OpenAlexCollector(BaseCollector):
             except ValueError:
                 pass
             
-        abstract = self._reconstruct_abstract(result.get("abstract_inverted_index"))
+        abstract = self.reconstruct_abstract(result.get("abstract_inverted_index"))
         categories = [
             t["display_name"] for t in result.get("topics", [])
             if t.get("display_name")
@@ -345,7 +356,7 @@ class OpenAlexCollector(BaseCollector):
             "source": "openalex",
             "paper_id": raw.get("id", "").replace("https://openalex.org/", ""),
             "title": raw.get("title"),
-            "abstract": self._reconstruct_abstract(raw.get("abstract_inverted_index")),
+            "abstract": self.reconstruct_abstract(raw.get("abstract_inverted_index")),
             "authors": authors,
             "year": raw.get("publication_year"),
             "source_name": source_name,
@@ -372,15 +383,7 @@ class OpenAlexCollector(BaseCollector):
         except Exception:
             return 0
         
-    @staticmethod
-    def reconstruct_abstract(inverted_index: Optional[dict]) -> Optional[str]:
-        if not inverted_index:
-            return None
-        position_word = {}
-        for word, positions in inverted_index.items():
-            for pos in positions:
-                position_word[pos] = word
-        return " ".join(position_word[i] for i in sorted(position_word)) if position_word else None
+    
     
     def _load_checkpoint(self, path: str, concept_id: str) -> dict:
         if self.resume_checkpoint and os.path.exists(path):
