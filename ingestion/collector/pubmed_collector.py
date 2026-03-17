@@ -5,7 +5,7 @@ import random
 import json
 from pathlib import Path
 
-from ingestion.collector.base_collector import BaseCollector
+from ingestion.collector.base_Collector import BaseCollector
 from ingestion.utils.models import Paper
 
 

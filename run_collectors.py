@@ -19,7 +19,7 @@ def main():
     parser.add_argument(
         '--config',
         type=str,
-        default='congif/sources.yaml',
+        default='config/sources.yaml',
         help='Path to sources configuration file'
     )
     parser.add_argument(

@@ -1,0 +1,22 @@
+2026-03-17 17:53:13,692 - main - ERROR - Fatal error: 'PubMedCollector' object has no attribute 'config'
+Traceback (most recent call last):
+  File "/home/abhirup/noema_metascholar_metadata_collector_service/run_collectors.py", line 35, in main
+    manager = CollectionManager(args.config)
+  File "/home/abhirup/noema_metascholar_metadata_collector_service/ingestion/manager/collection_manager.py", line 20, in __init__
+    self.collectors = self._init_collectors()
+                      ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/abhirup/noema_metascholar_metadata_collector_service/ingestion/manager/collection_manager.py", line 42, in _init_collectors
+    collectors['pubmed'] = PubMedCollector(
+                           ~~~~~~~~~~~~~~~^
+        rate_limit=pubmed_cfg.get('rate_limit', 3),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        config=pubmed_cfg
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/abhirup/noema_metascholar_metadata_collector_service/ingestion/collector/pubmed_collector.py", line 34, in __init__
+    self.config.get("request_delay_seconds", 0)
+    ^^^^^^^^^^^
+AttributeError: 'PubMedCollector' object has no attribute 'config'
+2026-03-17 17:54:26,612 - main - INFO - Starting collection for query: ''
+2026-03-17 18:23:04,804 - main - INFO - Starting collection for query: ''

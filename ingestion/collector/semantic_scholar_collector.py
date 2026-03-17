@@ -1,6 +1,6 @@
 from typing import List
 from datetime import datetime
-from ingestion.colelctor.base_collector import BaseCollector
+from ingestion.collector.base_Collector import BaseCollector
 from ingestion.utils.models import Paper
 
 class SemanticScholarCollector(BaseCollector):

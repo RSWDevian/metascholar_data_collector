@@ -5,21 +5,22 @@ sources:
     enabled: true
 
     # Throughput target
-    rate_limit: 1
-    request_delay_seconds: 4
-    request_delay_jitter_seconds: 1
-
+    rate_limit: 1.5
+    request_delay_seconds: 1
+    request_delay_jitter_seconds: 0.3
+    save_each__request: true
+    collect_in_memory: false
     # Per-request page size
     max_results_per_query: 1000
 
     # Runtime limiter (needs pagination-aware collector)
     pagination:
       enabled: true
-      start: 0
       page_size: 1000
       max_requests: 10000
       resume_from_checkpoint: true
       checkpoint_every_requests: 10
+      progress_every_requests: 1
       checkpoint_file: "data/raw/arxiv/arxiv_checkpoint.json"
 
     categories:
