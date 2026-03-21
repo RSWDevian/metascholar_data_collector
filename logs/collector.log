@@ -22,3 +22,195 @@ AttributeError: 'PubMedCollector' object has no attribute 'config'
 2026-03-17 18:23:04,804 - main - INFO - Starting collection for query: ''
 2026-03-21 17:07:44,423 - main - INFO - Collection Statistics:
 2026-03-21 17:07:44,423 - main - INFO -   arxiv: 0 papers, 0.00 MB
+2026-03-21 17:14:38,975 - main - INFO - Starting collection for query: ''
+2026-03-21 17:15:42,980 - main - INFO - Collection Results:
+2026-03-21 17:15:42,980 - main - INFO -   arxiv: {'count': 10000, 'status': 'success', 'categories_used': ['cs.*']}
+2026-03-21 17:15:43,067 - main - INFO - Updated Statistics:
+2026-03-21 17:15:43,067 - main - INFO -   arxiv: 10004 papers, 6.12 MB
+2026-03-21 17:16:04,564 - main - INFO - Starting collection for query: ''
+2026-03-21 17:16:04,564 - main - INFO - Collection Results:
+2026-03-21 17:16:04,565 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['cs.*']}
+2026-03-21 17:16:04,565 - main - INFO - Updated Statistics:
+2026-03-21 17:16:04,565 - main - INFO -   arxiv: 4 papers, 0.00 MB
+2026-03-21 17:16:50,881 - main - INFO - Starting collection for query: ''
+2026-03-21 17:17:20,911 - main - INFO - Collection Results:
+2026-03-21 17:17:20,911 - main - INFO -   arxiv: {'count': 10000, 'status': 'success', 'categories_used': ['cs.*']}
+2026-03-21 17:17:21,005 - main - INFO - Updated Statistics:
+2026-03-21 17:17:21,005 - main - INFO -   arxiv: 10004 papers, 6.13 MB
+2026-03-21 17:19:19,113 - main - INFO - Starting collection for query: ''
+2026-03-21 17:20:15,108 - main - INFO - Collection Results:
+2026-03-21 17:20:15,108 - main - INFO -   arxiv: {'count': 10000, 'status': 'success', 'categories_used': ['econ.*']}
+2026-03-21 17:20:15,264 - main - INFO - Updated Statistics:
+2026-03-21 17:20:15,264 - main - INFO -   arxiv: 20004 papers, 11.14 MB
+2026-03-21 17:25:07,370 - main - INFO - Starting collection for query: ''
+2026-03-21 17:25:08,373 - main - INFO - Collection Results:
+2026-03-21 17:25:08,373 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['gr-qc.*']}
+2026-03-21 17:25:08,543 - main - INFO - Updated Statistics:
+2026-03-21 17:25:08,543 - main - INFO -   arxiv: 20004 papers, 11.14 MB
+2026-03-21 17:25:35,625 - main - INFO - Starting collection for query: ''
+2026-03-21 17:25:35,626 - main - INFO - Collection Results:
+2026-03-21 17:25:35,626 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['gr-qc.*']}
+2026-03-21 17:25:35,790 - main - INFO - Updated Statistics:
+2026-03-21 17:25:35,790 - main - INFO -   arxiv: 20004 papers, 11.14 MB
+2026-03-21 17:25:49,234 - main - INFO - Starting collection for query: ''
+2026-03-21 17:25:49,234 - main - INFO - Collection Results:
+2026-03-21 17:25:49,234 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['gr-qc.*']}
+2026-03-21 17:25:49,401 - main - INFO - Updated Statistics:
+2026-03-21 17:25:49,401 - main - INFO -   arxiv: 20004 papers, 11.14 MB
+2026-03-21 17:25:52,121 - main - INFO - Starting collection for query: ''
+2026-03-21 17:25:52,121 - main - INFO - Collection Results:
+2026-03-21 17:25:52,121 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['gr-qc.*']}
+2026-03-21 17:25:52,285 - main - INFO - Updated Statistics:
+2026-03-21 17:25:52,285 - main - INFO -   arxiv: 20004 papers, 11.14 MB
+2026-03-21 17:26:13,597 - main - INFO - Starting collection for query: ''
+2026-03-21 17:26:14,262 - main - INFO - Collection Results:
+2026-03-21 17:26:14,262 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['gr-qc.*']}
+2026-03-21 17:26:14,429 - main - INFO - Updated Statistics:
+2026-03-21 17:26:14,429 - main - INFO -   arxiv: 20004 papers, 11.14 MB
+2026-03-21 17:26:34,550 - main - INFO - Starting collection for query: ''
+2026-03-21 17:26:35,438 - main - INFO - Collection Results:
+2026-03-21 17:26:35,438 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['hep-ex.*']}
+2026-03-21 17:26:35,611 - main - INFO - Updated Statistics:
+2026-03-21 17:26:35,611 - main - INFO -   arxiv: 20004 papers, 11.14 MB
+2026-03-21 20:24:34,893 - main - INFO - Starting collection for query: ''
+2026-03-21 20:24:35,490 - main - INFO - Collection Results:
+2026-03-21 20:24:35,490 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['hep-lat.*']}
+2026-03-21 20:24:35,670 - main - INFO - Updated Statistics:
+2026-03-21 20:24:35,670 - main - INFO -   arxiv: 20004 papers, 11.14 MB
+2026-03-21 20:24:59,350 - main - INFO - Starting collection for query: ''
+2026-03-21 20:26:01,947 - main - INFO - Collection Results:
+2026-03-21 20:26:01,947 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['hep-ph.*']}
+2026-03-21 20:26:02,109 - main - INFO - Updated Statistics:
+2026-03-21 20:26:02,109 - main - INFO -   arxiv: 19004 papers, 11.14 MB
+2026-03-21 20:26:36,125 - main - INFO - Starting collection for query: ''
+2026-03-21 20:26:36,759 - main - INFO - Collection Results:
+2026-03-21 20:26:36,759 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['hep-ph.*']}
+2026-03-21 20:26:36,937 - main - INFO - Updated Statistics:
+2026-03-21 20:26:36,937 - main - INFO -   arxiv: 20004 papers, 11.14 MB
+2026-03-21 20:27:06,247 - main - INFO - Starting collection for query: ''
+2026-03-21 20:29:15,771 - main - INFO - Collection Results:
+2026-03-21 20:29:15,771 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['hep-th.*']}
+2026-03-21 20:29:15,950 - main - INFO - Updated Statistics:
+2026-03-21 20:29:15,950 - main - INFO -   arxiv: 19004 papers, 11.14 MB
+2026-03-21 20:30:13,344 - main - INFO - Starting collection for query: ''
+2026-03-21 20:30:13,344 - main - INFO - Collection Results:
+2026-03-21 20:30:13,344 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['physics.*']}
+2026-03-21 20:30:13,510 - main - INFO - Updated Statistics:
+2026-03-21 20:30:13,510 - main - INFO -   arxiv: 20004 papers, 11.14 MB
+2026-03-21 20:32:16,583 - main - INFO - Starting collection for query: ''
+2026-03-21 20:32:16,583 - main - INFO - Collection Results:
+2026-03-21 20:32:16,583 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['eess.*']}
+2026-03-21 20:32:16,748 - main - INFO - Updated Statistics:
+2026-03-21 20:32:16,748 - main - INFO -   arxiv: 20004 papers, 11.14 MB
+2026-03-21 20:33:06,077 - main - INFO - Starting collection for query: ''
+2026-03-21 20:34:07,465 - main - INFO - Collection Results:
+2026-03-21 20:34:07,465 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['hep-ph']}
+2026-03-21 20:34:07,637 - main - INFO - Updated Statistics:
+2026-03-21 20:34:07,637 - main - INFO -   arxiv: 19004 papers, 11.14 MB
+2026-03-21 20:34:14,114 - main - INFO - Starting collection for query: ''
+2026-03-21 20:36:15,617 - main - INFO - Collection Results:
+2026-03-21 20:36:15,617 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['hep-ph']}
+2026-03-21 20:36:15,786 - main - INFO - Updated Statistics:
+2026-03-21 20:36:15,786 - main - INFO -   arxiv: 20004 papers, 11.14 MB
+2026-03-21 20:36:17,796 - main - INFO - Starting collection for query: ''
+2026-03-21 20:56:18,663 - main - INFO - Collection Results:
+2026-03-21 20:56:18,663 - main - INFO -   arxiv: {'count': 8000, 'status': 'success', 'categories_used': ['hep-ph']}
+2026-03-21 20:56:18,900 - main - INFO - Updated Statistics:
+2026-03-21 20:56:18,900 - main - INFO -   arxiv: 28004 papers, 15.32 MB
+2026-03-21 21:03:28,479 - main - INFO - Starting collection for query: ''
+2026-03-21 21:03:28,479 - main - INFO - Collection Results:
+2026-03-21 21:03:28,479 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['hep-ex']}
+2026-03-21 21:03:28,710 - main - INFO - Updated Statistics:
+2026-03-21 21:03:28,710 - main - INFO -   arxiv: 28004 papers, 15.32 MB
+2026-03-21 21:03:44,546 - main - INFO - Starting collection for query: ''
+2026-03-21 21:03:44,547 - main - INFO - Collection Results:
+2026-03-21 21:03:44,547 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['hep-ex']}
+2026-03-21 21:03:44,778 - main - INFO - Updated Statistics:
+2026-03-21 21:03:44,778 - main - INFO -   arxiv: 28004 papers, 15.32 MB
+2026-03-21 21:03:53,621 - main - INFO - Starting collection for query: ''
+2026-03-21 21:03:53,622 - main - INFO - Collection Results:
+2026-03-21 21:03:53,622 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['gr-qc']}
+2026-03-21 21:03:53,856 - main - INFO - Updated Statistics:
+2026-03-21 21:03:53,856 - main - INFO -   arxiv: 28004 papers, 15.32 MB
+2026-03-21 21:08:43,528 - main - INFO - Starting collection for query: ''
+2026-03-21 21:08:43,529 - main - INFO - Collection Results:
+2026-03-21 21:08:43,529 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['quant-ph']}
+2026-03-21 21:08:43,757 - main - INFO - Updated Statistics:
+2026-03-21 21:08:43,757 - main - INFO -   arxiv: 28004 papers, 15.32 MB
+2026-03-21 21:29:47,825 - main - ERROR - Fatal error: while scanning a simple key
+  in "/home/abhirup/MS_metadata_collector_service/config/sources.yaml", line 8, column 5
+could not find expected ':'
+  in "/home/abhirup/MS_metadata_collector_service/config/sources.yaml", line 9, column 5
+Traceback (most recent call last):
+  File "/home/abhirup/MS_metadata_collector_service/run_collectors.py", line 56, in main
+    manager = CollectionManager(config_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/ingestion/manager/collection_manager.py", line 14, in __init__
+    config = yaml.safe_load(f)
+             ^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+  File "/home/abhirup/MS_metadata_collector_service/venv/lib/python3.12/site-packages/yaml/scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+yaml.scanner.ScannerError: while scanning a simple key
+  in "/home/abhirup/MS_metadata_collector_service/config/sources.yaml", line 8, column 5
+could not find expected ':'
+  in "/home/abhirup/MS_metadata_collector_service/config/sources.yaml", line 9, column 5
+2026-03-21 21:32:34,320 - main - INFO - Starting collection for query: ''
+2026-03-21 21:32:34,321 - main - INFO - Collection Results:
+2026-03-21 21:32:34,321 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['astro-ph.*']}
+2026-03-21 21:32:34,549 - main - INFO - Updated Statistics:
+2026-03-21 21:32:34,549 - main - INFO -   arxiv: 28004 papers, 15.32 MB
+2026-03-21 21:32:47,611 - main - INFO - Starting collection for query: ''
+2026-03-21 21:32:47,612 - main - INFO - Collection Results:
+2026-03-21 21:32:47,612 - main - INFO -   arxiv: {'count': 0, 'status': 'success', 'categories_used': ['astro-ph.*', 'cond-mat.*', 'cs.*', 'econ.*', 'eess.*', 'gr-qc', 'hep-ex', 'hep-lat', 'hep-ph', 'hep-th', 'math.*', 'math-ph', 'nlin.*', 'nucl-ex', 'nucl-th', 'physics.*', 'q-bio.*', 'q-fin.*', 'quant-ph', 'stat.*']}
+2026-03-21 21:32:47,846 - main - INFO - Updated Statistics:
+2026-03-21 21:32:47,846 - main - INFO -   arxiv: 28004 papers, 15.32 MB
+2026-03-21 21:41:46,453 - main - INFO - Starting collection for query: ''
+2026-03-21 21:55:30,668 - main - INFO - Collection Results:
+2026-03-21 21:55:30,668 - main - INFO -   arxiv: {'count': 29047, 'status': 'success', 'categories_used': ['astro-ph.*', 'cond-mat.*', 'cs.*', 'econ.*', 'eess.*', 'gr-qc', 'hep-ex', 'hep-lat', 'hep-ph', 'hep-th', 'math.*', 'math-ph', 'nlin.*', 'nucl-ex', 'nucl-th', 'physics.*', 'q-bio.*', 'q-fin.*', 'quant-ph', 'stat.*']}
+2026-03-21 21:55:31,169 - main - INFO - Updated Statistics:
+2026-03-21 21:55:31,170 - main - INFO -   arxiv: 54051 papers, 34.16 MB
+2026-03-21 21:56:47,425 - main - INFO - Starting collection for query: ''

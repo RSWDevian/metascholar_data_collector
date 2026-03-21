@@ -6,13 +6,10 @@ from ingestion.utils.logger import setup_logger
 
 
 def _resolve_default_config() -> str:
-    # Works when running from repo root or from an installed location
     local_config = Path(__file__).resolve().parent / "config" / "sources.yaml"
     if local_config.exists():
         return str(local_config)
-
-    cwd_config = Path.cwd() / "config" / "sources.yaml"
-    return str(cwd_config)
+    return str(Path.cwd() / "config" / "sources.yaml")
 
 
 def main():
@@ -39,6 +36,12 @@ def main():
         action="store_true",
         help="Show collection statistics and exit",
     )
+    parser.add_argument(
+        "--category",
+        action="append",
+        default=None,
+        help="ArXiv category filter. Use multiple times for multiple categories (e.g., --category cs.* --category stat.*)",
+    )
 
     args = parser.parse_args()
     logger = setup_logger("main", "logs/collector.log")
@@ -46,8 +49,7 @@ def main():
     config_path = args.config or _resolve_default_config()
     if not Path(config_path).exists():
         raise FileNotFoundError(
-            f"Config file not found at '{config_path}'. "
-            f"Pass an explicit config with --config."
+            f"Config file not found at '{config_path}'. Pass explicit path with --config."
         )
 
     try:
@@ -60,7 +62,11 @@ def main():
                 logger.info(f"  {source}: {data['papers']} papers, {data['size_mb']:.2f} MB")
         else:
             logger.info(f"Starting collection for query: '{args.query}'")
-            results = manager.collect_papers(args.query, source=args.source)
+            results = manager.collect_papers(
+                args.query,
+                source=args.source,
+                categories=args.category,
+            )
 
             logger.info("Collection Results:")
             for source, result in results.items():

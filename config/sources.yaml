@@ -2,22 +2,39 @@ sources:
   arxiv:
     name: "ArXiv"
     base_url: "http://export.arxiv.org/api/query"
+    protocol: "search"
     enabled: true
 
-    # Throughput target
-    rate_limit: 1.5
-    request_delay_seconds: 1
+    rate_limit: 1.0
+    request_delay_seconds: 1.2
     request_delay_jitter_seconds: 0.3
     save_each_request: true
     collect_in_memory: false
-    # Per-request page size
     max_results_per_query: 1000
 
-    # Runtime limiter (needs pagination-aware collector)
+    # Date splitting for full category-wise harvest
+    date_split_years: 5
+    max_error_retries: 3
+    date_ranges:
+    - from: "1991-01-01"
+      until: "1995-12-31"
+    - from: "1996-01-01"
+      until: "2000-12-31"
+    - from: "2001-01-01"
+      until: "2005-12-31"
+    - from: "2006-01-01"
+      until: "2010-12-31"
+    - from: "2011-01-01"
+      until: "2015-12-31"
+    - from: "2016-01-01"
+      until: "2020-12-31"
+    - from: "2021-01-01"
+      until: "2026-12-31"
+
     pagination:
       enabled: true
       page_size: 1000
-      max_requests: 10000
+      max_requests: 100000
       resume_from_checkpoint: true
       checkpoint_every_requests: 10
       progress_every_requests: 1
