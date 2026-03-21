@@ -78,19 +78,19 @@ _(Note: Names can be changed but in that case we have to change the names at all
 Collect papers for a query from all enabled sources:
 
 ```bash
-python run_collectors.py "machine learning"
+ms-collector "machine learning"
 ```
 
 Collect from only ArXiv:
 
 ```bash
-python run_collectors.py "" --source arxiv
+ms-collector "" --source arxiv
 ```
 
 Show stored stats:
 
 ```bash
-python run_collectors.py "" --stats
+ms-collector "" --stats
 ```
 
 ## Long-Run Crawling (ArXiv)
